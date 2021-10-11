@@ -1,0 +1,10 @@
+@import '../../../../styles/_sizes.scss';
+@import '../../../../styles/colors';
+@import '../../../../styles/tag';
+
+:host {
+  @include eventTag();
+  background-color: $primary-light;
+  border: 2px solid $primary;
+  color: #fff;
+}

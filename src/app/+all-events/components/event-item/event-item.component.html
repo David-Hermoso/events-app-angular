@@ -1,0 +1,25 @@
+<div class="event__item">
+  <app-event-info
+    class="event__info"
+    [name]="eventItem.eventName"
+    [city]="eventItem.city.name"
+    [noTicketRequired]="eventItem.noTicketRequired"
+    [startDate]="eventItem.startDate | date:'hh:mm'"
+    [duration]="eventItem.duration">
+  </app-event-info>
+  <app-event-actions>
+    <app-button
+      class="event__item-cta"
+      type="primary"
+      text="Sign up!"
+      (onClick)="onSignUpClicked()">
+    </app-button>
+  </app-event-actions>
+  <app-free-tag
+    *ngIf="eventItem.noTicketRequired"></app-free-tag>
+  <app-price-tag
+    *ngIf="!eventItem.noTicketRequired"
+    [price]="eventItem.price">
+  </app-price-tag>
+
+</div>

@@ -1,0 +1,20 @@
+$primary: var(--paolo-veronese-green);
+$primary-light: #81BFD4;
+$accent: var(--space-cadet);
+$accent-light: #A0C181;
+$danger: #C74B36;
+$warning: #F28E24;
+$base: var(--light-orange);
+$grey: #9AA8A6;
+$darker: #37454D;
+$white: #FFFFFF;
+$gradient: linear-gradient(70deg, $primary-light, $primary);
+
+:root {
+  --space-cadet: #2d3047ff;
+  --paolo-veronese-green: #419d78ff;
+  --earth-yellow: #e0a458ff;
+  --light-orange: #ffdbb5ff;
+  --fuchsia-crayola: #c04abcff;
+}
+
